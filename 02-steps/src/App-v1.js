@@ -29,32 +29,13 @@ function App () {
         </div>
         <p className='message'>Step {step}: {messages[step - 1]} </p>
         <div className='buttons'>
-          <Button
-            onClickHandler={handlePrevious}
-            bgColor={"blue"}
-            color={"white"}
-          ><span>👈 Previous</span>
-          </Button>
-          {/* <button onClick={handlePrevious}>Previous</button> */}
-          <Button
-            onClickHandler={handleNext}
-            bgColor={"blue"}
-            color={"white"}
-          ><span>Next 👉</span>
-          </Button>
-          {/* <button onClick={handleNext}>Next</button> */}
+          <button onClick={handlePrevious}>Previous</button>
+          <button onClick={handleNext}>Next</button>
         </div>
       </div>
       )}
     </>
   )
-}
-
-
-function Button ({ bgColor, color, onClickHandler, children }) {
-  return (
-    <button onClick={onClickHandler} style={{ backgroundColor: bgColor, color: color }}>{children}</button>
-  );
 }
 
 export default App
