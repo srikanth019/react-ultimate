@@ -4,7 +4,7 @@ import { useState } from "react";
 
 import styles from "./Form.module.css";
 
-export function convertToEmoji(countryCode) {
+export function convertToEmoji (countryCode) {
   const codePoints = countryCode
     .toUpperCase()
     .split("")
@@ -12,9 +12,9 @@ export function convertToEmoji(countryCode) {
   return String.fromCodePoint(...codePoints);
 }
 
-function Form() {
+function Form () {
   const [cityName, setCityName] = useState("");
-  const [country, setCountry] = useState("");
+  // const [country, setCountry] = useState("");
   const [date, setDate] = useState(new Date());
   const [notes, setNotes] = useState("");
 
