@@ -2,10 +2,11 @@ import CityItem from './CityItem'
 import styles from './CityList.module.css'
 import Spinner from "./Spinner"
 import Message from "./Message"
-import PropTypes from 'prop-types'
+import { useCities } from '../contexts/useCity'
 
 
-function CityList ({ cities, isLoading }) {
+function CityList () {
+    const { cities, isLoading } = useCities()
     if (isLoading) return <Spinner />
     if (!cities.length) return <Message message="Hello add tour first city, by clicking on Map" />
     return (
@@ -13,11 +14,6 @@ function CityList ({ cities, isLoading }) {
             {cities.map(city => <CityItem key={city.id} cityItem={city} />)}
         </ul>
     )
-}
-
-CityList.propTypes = {
-    cities: PropTypes.array.isRequired,
-    isLoading: PropTypes.bool.isRequired
 }
 
 export default CityList

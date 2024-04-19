@@ -2,10 +2,12 @@ import CountryItem from './CountryItem'
 import styles from './CountryList.module.css'
 import Spinner from "./Spinner"
 import Message from "./Message"
-import PropTypes from 'prop-types'
+import { useCities } from '../contexts/useCity'
 
 
-function CountryList ({ cities, isLoading }) {
+function CountryList () {
+    const { cities, isLoading } = useCities()
+
     if (isLoading) return <Spinner />
     if (!cities.length) return <Message message="Hello add tour first city, by clicking on Map" />
 
@@ -21,11 +23,6 @@ function CountryList ({ cities, isLoading }) {
             {countries.map(country => <CountryItem key={country.id} country={country} />)}
         </ul>
     )
-}
-
-CountryList.propTypes = {
-    cities: PropTypes.array.isRequired,
-    isLoading: PropTypes.bool.isRequired
 }
 
 export default CountryList
