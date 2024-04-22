@@ -26,7 +26,7 @@ function City () {
 
   if (isLoading) return <Spinner />
 
-  console.log(currentCity);
+  if (!currentCity) return null
 
   const { cityName, emoji, date, notes } = currentCity;
 

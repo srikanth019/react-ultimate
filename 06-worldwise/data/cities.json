@@ -13,18 +13,6 @@
       "id": "178067788"
     },
     {
-      "cityName": "Chennai",
-      "country": "Portugal",
-      "emoji": "🇮🇳",
-      "date": "2027-10-31T15:59:59.138Z",
-      "notes": "My favorite city so far!",
-      "position": {
-        "lat": 13.0474733,
-        "lng": 80.0442029
-      },
-      "id": "7393038"
-    },
-    {
       "id": "62ca",
       "cityName": "Ahmedabad",
       "country": "India",
@@ -34,6 +22,54 @@
       "position": {
         "lat": "23.008964269673108",
         "lng": "72.59216308593751"
+      }
+    },
+    {
+      "id": "f6d5",
+      "cityName": "Kadapa",
+      "country": "India",
+      "emoji": "🇮🇳",
+      "date": "2024-04-22T10:33:05.107Z",
+      "notes": "test",
+      "position": {
+        "lat": "14.469255956922682",
+        "lng": "78.82690429687501"
+      }
+    },
+    {
+      "id": "c218",
+      "cityName": "Singapore",
+      "country": "Singapore",
+      "emoji": "🇸🇬",
+      "date": "2024-04-22T10:34:34.057Z",
+      "notes": "sing",
+      "position": {
+        "lat": "1.2962761196418218",
+        "lng": "103.743896484375"
+      }
+    },
+    {
+      "id": "f57c",
+      "cityName": "Valpoy",
+      "country": "India",
+      "emoji": "🇮🇳",
+      "date": "2024-04-22T10:36:01.610Z",
+      "notes": "",
+      "position": {
+        "lat": "15.538375926292062",
+        "lng": "74.05883789062501"
+      }
+    },
+    {
+      "id": "f735",
+      "cityName": "Ayodar",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2024-04-22T10:45:46.265Z",
+      "notes": "",
+      "position": {
+        "lat": "40.01709786313761",
+        "lng": "-0.38314819335937506"
       }
     }
   ]
