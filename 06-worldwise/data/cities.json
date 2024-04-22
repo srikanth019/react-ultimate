@@ -1,52 +1,16 @@
 {
   "cities": [
     {
-      "cityName": "Lisbon",
-      "country": "Portugal",
-      "emoji": "🇵🇹",
-      "date": "2027-10-31T15:59:59.138Z",
-      "notes": "My favorite city so far!",
-      "position": {
-        "lat": 38.727881642324164,
-        "lng": -9.140900099907554
-      },
-      "id": 73930385
-    },
-    {
       "cityName": "Hyderabad",
       "country": "India",
       "emoji": "🇮🇳",
       "date": "2027-07-15T08:22:53.976Z",
       "notes": "",
       "position": {
-        "lat": 40.46635901755316,
-        "lng": -3.7133789062500004
+        "lat": 17.412281,
+        "lng": 78.243237
       },
-      "id": 178067788
-    },
-    {
-      "cityName": "Madrid",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2027-07-15T08:22:53.976Z",
-      "notes": "",
-      "position": {
-        "lat": 40.46635901755316,
-        "lng": -3.7133789062500004
-      },
-      "id": 17806751
-    },
-    {
-      "cityName": "Berlin",
-      "country": "Germany",
-      "emoji": "🇩🇪",
-      "date": "2027-02-12T09:24:11.863Z",
-      "notes": "Amazing 😃",
-      "position": {
-        "lat": 17.4262584,
-        "lng": 78.43412
-      },
-      "id": 98443197
+      "id": "178067788"
     },
     {
       "cityName": "Chennai",
@@ -58,7 +22,19 @@
         "lat": 13.0474733,
         "lng": 80.0442029
       },
-      "id": 7393038
+      "id": "7393038"
+    },
+    {
+      "id": "62ca",
+      "cityName": "Ahmedabad",
+      "country": "India",
+      "emoji": "🇮🇳",
+      "date": "2024-04-22T07:50:50.952Z",
+      "notes": "",
+      "position": {
+        "lat": "23.008964269673108",
+        "lng": "72.59216308593751"
+      }
     }
   ]
 }
