@@ -49,18 +49,6 @@
       }
     },
     {
-      "id": "f57c",
-      "cityName": "Valpoy",
-      "country": "India",
-      "emoji": "🇮🇳",
-      "date": "2024-04-22T10:36:01.610Z",
-      "notes": "",
-      "position": {
-        "lat": "15.538375926292062",
-        "lng": "74.05883789062501"
-      }
-    },
-    {
       "id": "f735",
       "cityName": "Ayodar",
       "country": "Spain",
@@ -82,6 +70,30 @@
       "position": {
         "lat": "40.092781012494065",
         "lng": "-0.6015014648437501"
+      }
+    },
+    {
+      "id": "ad05",
+      "cityName": "Nawabpet",
+      "country": "India",
+      "emoji": "🇮🇳",
+      "date": "2024-04-23T07:33:20.725Z",
+      "notes": "",
+      "position": {
+        "lat": "17.33490806580805",
+        "lng": "77.91091918945314"
+      }
+    },
+    {
+      "id": "3c9d",
+      "cityName": "Hyderabad",
+      "country": "India",
+      "emoji": "🇮🇳",
+      "date": "2024-04-23T07:34:25.256Z",
+      "notes": "",
+      "position": {
+        "lat": "17.43975128454968",
+        "lng": "78.52615356445314"
       }
     }
   ]

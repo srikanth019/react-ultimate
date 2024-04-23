@@ -1,4 +1,4 @@
-import { useEffect, useMemo, createContext, useReducer } from "react";
+import { useEffect, useMemo, createContext, useReducer, useCallback } from "react";
 import PropTypes from 'prop-types'
 
 // #1 Create a Context
@@ -81,7 +81,7 @@ function CityContextProvider ({ children }) {
         fetchCities()
     }, [])
 
-    async function getCity (id) {
+    const getCity = useCallback(async function getCity (id) {
         if (id == currentCity?.id) return
         dispatch({ type: "loading" })
         try {
@@ -92,7 +92,7 @@ function CityContextProvider ({ children }) {
             dispatch({ type: "city/error", payload: "There was an error loading city data.." })
             alert(error.message)
         }
-    }
+    }, [currentCity?.id])
 
     async function createCity (newCity) {
         try {
@@ -127,7 +127,7 @@ function CityContextProvider ({ children }) {
     }
 
     const contextValue = useMemo(() => ({ cities, isLoading, currentCity, getCity, createCity, deleteCity }),
-        [cities, isLoading, currentCity]
+        [cities, isLoading, currentCity, getCity]
     );
 
     return (
