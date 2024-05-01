@@ -5,7 +5,7 @@ import Spinner from "../../ui/Spinner";
 import { useSettings } from "./useSettings";
 import { useUpdateSetting } from "./useUpdateSetting";
 
-function UpdateSettingsForm() {
+function UpdateSettingsForm () {
   const {
     isLoading,
     settings: {
@@ -19,7 +19,7 @@ function UpdateSettingsForm() {
 
   if (isLoading) return <Spinner />;
 
-  function handleUpdate(e, field) {
+  function handleUpdate (e, field) {
     const { value } = e.target;
 
     if (!value) return;
