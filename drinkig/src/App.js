@@ -3,28 +3,30 @@ import React, { useState } from "react";
 
 const goal = 2;
 const totalCups = 8;
-const width = "165px";
-const height = "350px";
+
+// width and height are in px format
+const width = 165;
+const height = 350;
 
 function App () {
   const [selectedJar, setSelectedJar] = useState(null);
   const [remaining, setRemaining] = useState(goal);
   const [percentage, setPercentage] = useState(0);
-  const [jarPercentageHeight, setJarPercentageHeight] = useState("0px");
+  const [waterPercentage, setWaterPercentage] = useState(0);
 
-  const isPercentageVisible = jarPercentageHeight !== "0px";
+  const isPercentageVisible = waterPercentage !== 0;
 
   const handleJarClick = (index) => {
     if (index === selectedJar) {
       setSelectedJar(index - 1);
-      const jarHeight = `${((index - 1) / totalCups) * 350}px`;
-      setJarPercentageHeight(jarHeight);
+      const jarHeight = ((index - 1) / totalCups) * height;
+      setWaterPercentage(jarHeight);
       setPercentage(((index - 1) / totalCups) * 100);
       setRemaining(goal - (index - 1) * 0.25);
     } else {
       setSelectedJar(index);
-      const jarHeight = `${(index / totalCups) * 350}px`;
-      setJarPercentageHeight(jarHeight);
+      const jarHeight = (index / totalCups) * height;
+      setWaterPercentage(jarHeight);
       setPercentage((index / totalCups) * 100);
       setRemaining(goal - index * 0.25);
     }
@@ -39,7 +41,7 @@ function App () {
         <div className="text-xl">Goal: {goal} Liters</div>
         <div
           className="bg-slate-50 border-[4px] text-blue-500 border-[#3456ce] m-3 rounded-t-md rounded-b-xl flex flex-col   items-center justify-center"
-          style={{ width, height }}
+          style={{ width: `${width}px`, height: `${height}px` }}
         >
           {
             remaining > 0 ?
@@ -52,7 +54,7 @@ function App () {
           <div
             className={`bg-blue-300 flex items-center justify-center font-bold text-3xl rounded-t-md rounded-b-xl`}
             id="percentage"
-            style={{ visibility: isPercentageVisible ? "visible" : "hidden", height: jarPercentageHeight, width: "158px" }}
+            style={{ visibility: isPercentageVisible ? "visible" : "hidden", height: `${waterPercentage}px`, width: `${width - 7}px` }} //need to decrease width approx 7px
           >
             {percentage} %
           </div>
