@@ -1,4 +1,3 @@
-// import "./app.css";
 import React, { useState } from "react";
 
 const capacity = 2;
@@ -62,11 +61,7 @@ function App () {
         >
           {
             remaining > 0 ?
-              <div
-                className="flex flex-col items-center justify-center text-center flex-1"
-                id="remained"
-                style={{ height: "0px" }}
-              >
+              <div className="flex flex-col items-center justify-center text-center flex-1" id="remained" style={{ height: "0px" }}>
                 <span id="liters" className="font-semibold">{remaining} L</span>
                 <small> Remained</small>
               </div>
