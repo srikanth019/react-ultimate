@@ -118,10 +118,10 @@ function App () {
     <div className="flex flex-col items-center">
       <h1 className="text-3xl font-bold mt-8 mb-4">Hello from drink Water</h1>
       <div className="flex w-full">
-        <div className="w-1/3">
+        <div className="flex flex-col items-center justify-center w-1/4">
           <UserInput />
         </div>
-        <main className="w-2/3">
+        <main className="w-3/4">
           <DrinkWater />
         </main>
       </div>
